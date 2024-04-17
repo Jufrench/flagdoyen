@@ -167,7 +167,7 @@ interface WelcomeModalProps {
 function WelcomeModal(props: WelcomeModalProps): JSX.Element {
   // const [opened, { open, close }] = useDisclosure(true);
   return (
-    <Modal opened={props.opened} onClose={props.close} title="Welcome to Banderas!" centered>
+    <Modal closeOnClickOutside={false} opened={props.opened} onClose={props.close} title="Welcome to Banderas!" centered>
       <Tabs style={{color: "#000", display: "flex", justifyContent: "center", alignItems: "center"}} orientation="vertical" defaultValue="welcome">
         <Tabs.List>
           <Tabs.Tab value="welcome">
